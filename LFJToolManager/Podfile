@@ -1,0 +1,12 @@
+ platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+source 'https://github.com/aliyun/aliyun-specs.git'
+def commonPods
+    pod 'MJRefresh', '~> 3.1.15.3'
+    pod 'AlicloudHTTPDNS', '~> 1.17.3'
+
+end
+target 'LFJToolManager' do
+    commonPods
+end

@@ -1,0 +1,34 @@
+PODS:
+  - AlicloudHTTPDNS (1.17.5):
+    - AlicloudUT
+    - AlicloudUtils
+  - AlicloudUT (5.2.0.16):
+    - AlicloudUTDID
+  - AlicloudUTDID (1.5.0.94)
+  - AlicloudUtils (1.3.9):
+    - AlicloudUTDID
+  - MJRefresh (3.1.15.3)
+
+DEPENDENCIES:
+  - AlicloudHTTPDNS (~> 1.17.3)
+  - MJRefresh (~> 3.1.15.3)
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AlicloudHTTPDNS
+    - AlicloudUT
+    - AlicloudUTDID
+    - AlicloudUtils
+  https://github.com/CocoaPods/Specs.git:
+    - MJRefresh
+
+SPEC CHECKSUMS:
+  AlicloudHTTPDNS: 0089ade3d4726b8dbdfae9750ee77f198391571b
+  AlicloudUT: 6d1cf30d57d096b7e9bb4b069dd0ba6ad59a3338
+  AlicloudUTDID: 7323c443dcdf9a73e2224dc6ce51703671d7a765
+  AlicloudUtils: 66e0ba6ece62d7dd05e9dd95674b2c7811624c2f
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+
+PODFILE CHECKSUM: 9fc632b0dd206b1bcfc95acb452464bd38121b40
+
+COCOAPODS: 1.9.1

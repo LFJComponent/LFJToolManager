@@ -1,0 +1,1120 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0883074DEB508458C174DE306B480284 /* AlicloudUTDID */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4E18F0A85C0144C1F7FF2D61AFE0F3D7 /* Build configuration list for PBXAggregateTarget "AlicloudUTDID" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = AlicloudUTDID;
+		};
+		3DD5390F049BB695CC615E07AF49B04C /* AlicloudHTTPDNS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 34825F93B5E7E65C101EAAB59048BF55 /* Build configuration list for PBXAggregateTarget "AlicloudHTTPDNS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E4EA067826DD5720A48B52E1849FCB59 /* PBXTargetDependency */,
+				F3781B02CC0182B8A629477DEC772B98 /* PBXTargetDependency */,
+			);
+			name = AlicloudHTTPDNS;
+		};
+		DD99D8E362F7950F06AD0A963460E834 /* AlicloudUtils */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 860B9C45A6E26169BB388BBF2884ACB5 /* Build configuration list for PBXAggregateTarget "AlicloudUtils" */;
+			buildPhases = (
+			);
+			dependencies = (
+				84FA776906D43DDC9F08C15590661D96 /* PBXTargetDependency */,
+			);
+			name = AlicloudUtils;
+		};
+		E9E6A901E448660EFF3445A118182C28 /* AlicloudUT */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 63663D6BE8BC104C57932A7F1C1C0E87 /* Build configuration list for PBXAggregateTarget "AlicloudUT" */;
+			buildPhases = (
+			);
+			dependencies = (
+				EB8AB07961AB46C34504C411BB47D595 /* PBXTargetDependency */,
+			);
+			name = AlicloudUT;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03110534BE651EBAF2313563CD8200F2 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024B20846C905F7D3FE03B10CC29992 /* MJRefreshStateHeader.m */; };
+		10B320645982B481D026D252158928E1 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA588C063CBDA70E23AA2149D6E275DE /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		139697D9E4AC066C9F1F60627027D6C5 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3F0B3CBF2D68E791E2FBF62A7DA6 /* MJRefreshBackFooter.m */; };
+		1AD158C0433B4552126BCB09F03623ED /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B3D9E3BD614104BE51B0B168AE286 /* UIView+MJExtension.m */; };
+		1B46580F8553F6287C9A7F1F4388934A /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E70DAF1B335F6517DCB4496A5B5213C0 /* MJRefreshComponent.m */; };
+		1D5E6EFF91D9CE761E34FE23B10AB6C4 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A89E1822B4B2BC9634F011EBFC8C612C /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A9B91A3F37582467ECF54A3A626053B /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EA878B18484FD39DF2608F180D3B1CB4 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D79705C9E9111F3795C662FCBA866CC /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E966BA8790849F7AD9AF16BD838C038F /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F10992ACA27F357F768E796B512720F /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B827C919D6D05CC066F1B4338937F444 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		30A6398F5A3F95D43BEEBF5BE25AA7F9 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 457C12546B1BEF0A3C2A765230D0CC8F /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		477E7FD45E71B3DC68C7BE15A3354EFA /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F12FB450E953FDB155219114417CC0D7 /* MJRefreshAutoNormalFooter.m */; };
+		491C3309A94031C2F125BF35ABAF39E6 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ADADB92083C309166C2847BA2E5E676C /* MJRefreshGifHeader.m */; };
+		5F5FD28C1193583E77E3D5AB31231EEE /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B85C5A11D59E1DB4BB839CE5C01D0 /* MJRefresh-dummy.m */; };
+		725CC8DF14A3844A66DCE932B1BFF0FA /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6A195AA45A812E167AF88AF93BBF02 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7497DFD7BD1BD80E3854691DAED632DD /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C0056404C2E68127B56381E3457F432C /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		778EDA88AD8089DDDCB9BAD14FC61504 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F0AE5AE3EE8EDDC3989D3D6A326FE08 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E8CE4189B86E32C6F2C994871C65531 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E0C212FB113082547A2295F38D907B /* MJRefreshBackStateFooter.m */; };
+		7E92196E1F5F3DFB3AEC643C23E674C8 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84865EE72D5EDD83DC479769879E2765 /* MJRefreshAutoStateFooter.m */; };
+		81480792CD6ED7819683C63B2ECC81BA /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F66F01D5E0B7FA5385E0068B3C34F08 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82935DB0B0EA3295EE2B1E38D1C0EAE4 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0C6F20B8B947D30A113134F1BF711 /* NSBundle+MJRefresh.m */; };
+		83E5C491196829E6B6A67BEC03557678 /* Pods-LFJToolManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C2D45133F5DE27CFEB949F2424F06 /* Pods-LFJToolManager-dummy.m */; };
+		8496977A6639BB029807D4AEB634C419 /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED9AB9CEF47A6524DE93BEED1457F3 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8540D7C92A51F917D80AABEDDDE44417 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = B482314CCEF9EF440B53065802C23EA1 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A18B5C1BDE43ECDD7853255208EE5B3 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BD2BA816FE254EBBDDDF393151DFDA /* MJRefreshFooter.m */; };
+		AE27FE8438D28A27E822EF13B8062F02 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = C668E19914A7D3CD403DFEF204546C2F /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AEBFCD60D316911D54797AA8CD5E7804 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75917AB4637620536C70354BECBD71 /* MJRefreshHeader.m */; };
+		B0E053196779C295CAD5B467489A21D2 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9860299B6928C00EBDE58381B581961E /* UIScrollView+MJRefresh.m */; };
+		B901695204B1B2E59072DB6F243001EC /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A7F91C0CC575A8F061B38DFF751D6 /* UIScrollView+MJExtension.m */; };
+		BB86867A8B715C629357735FCFC81814 /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1965F7C618EB858581D9E69F3883CB0F /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2FD8E9409D56558CA21BC7C143CBB7A /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1549A3FA5F17944516C1E64575473E05 /* MJRefreshNormalHeader.m */; };
+		DF1E5C5712871055949A66ABEE52B5BE /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C265E72346953F9F838E5811A4226909 /* MJRefreshAutoFooter.m */; };
+		E14F3EC4E687268A35CCE55D337B7BA2 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E07B31C32F660299D20007F3A163B /* MJRefreshBackNormalFooter.m */; };
+		E4BA1E30409473575812484CEC66C7D8 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5007114E3F0DD6689232821DB512965B /* MJRefreshAutoGifFooter.m */; };
+		E7D27A72714C1736CBCC5506AD4955F3 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EB609EBB5942547862AF8C8D7981306B /* MJRefreshConst.m */; };
+		ED71760D75BF9B6C8BC98062BDFD07D1 /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = CE02F56C6373EFC58A06CCBB8EA8D42D /* MJRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF0408C522F5F9F4383EA45FF59A89FA /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3E53F884EEA0ADA3604BA571BBD0F2 /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4C593492844D37C58705DACB3409C28 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AACA52604DED54B62D1405EEBF81D9 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F684BDC9EB74BD5FD12E3ABFDE779E12 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 89FBF32111CB34A031FD26A8BCF059A9 /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE58C05D0A4BA35CFD780D486397AFCF /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B67886918C66E7F615FE7A14FDBFB /* MJRefreshBackGifFooter.m */; };
+		FED5770569AAA0E45EF74522CB617B64 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5248BA5F9FCE273AD7238E83DAEE4CEF /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEEAFBEC41C329F18AEDA18220883FF5 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1D0370DFC46586414433E633C03628 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30439A0BA4F9E8B6239CFA990D674F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0883074DEB508458C174DE306B480284;
+			remoteInfo = AlicloudUTDID;
+		};
+		4A9FB742980DB53B6630562A7708ECDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E6A901E448660EFF3445A118182C28;
+			remoteInfo = AlicloudUT;
+		};
+		4FB3FAFD5940E5A9B9FF135978FCF930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD99D8E362F7950F06AD0A963460E834;
+			remoteInfo = AlicloudUtils;
+		};
+		75A925E9C6935AF1F7FC9D3A7AA4F0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
+			remoteInfo = MJRefresh;
+		};
+		9644D91B1C11E64D560903D149B93F8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0883074DEB508458C174DE306B480284;
+			remoteInfo = AlicloudUTDID;
+		};
+		964BCA112AE3E0D9488D4E8D737935F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0883074DEB508458C174DE306B480284;
+			remoteInfo = AlicloudUTDID;
+		};
+		97C3C1756888BE0D74553D7320E0A273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD5390F049BB695CC615E07AF49B04C;
+			remoteInfo = AlicloudHTTPDNS;
+		};
+		D5EC64A6DB0CF4EC5E7B2C9A213F50F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E6A901E448660EFF3445A118182C28;
+			remoteInfo = AlicloudUT;
+		};
+		F3F58413728825000213CC02B96AFDDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD99D8E362F7950F06AD0A963460E834;
+			remoteInfo = AlicloudUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000E07B31C32F660299D20007F3A163B /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		03ED9AB9CEF47A6524DE93BEED1457F3 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		07CAF1259A58DE862E3C0D2DA87C67E4 /* AlicloudUTDID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUTDID.release.xcconfig; sourceTree = "<group>"; };
+		0C0B67886918C66E7F615FE7A14FDBFB /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		0C5C2D45133F5DE27CFEB949F2424F06 /* Pods-LFJToolManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFJToolManager-dummy.m"; sourceTree = "<group>"; };
+		14C94851B108B18FDFBF40B5D2AB0F0C /* Pods-LFJToolManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LFJToolManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1549A3FA5F17944516C1E64575473E05 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		166B3D9E3BD614104BE51B0B168AE286 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18AACA52604DED54B62D1405EEBF81D9 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		1965F7C618EB858581D9E69F3883CB0F /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		1F86BDD17B7DA436849517D80FD116E5 /* UTMini.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTMini.framework; path = ut/UTMini.framework; sourceTree = "<group>"; };
+		28E0C212FB113082547A2295F38D907B /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		3C75917AB4637620536C70354BECBD71 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
+		3D00997C9DAF1127DEB0E65E8A303050 /* Pods-LFJToolManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFJToolManager.debug.xcconfig"; sourceTree = "<group>"; };
+		4487008B9C22F296043DEDC3B0142AA8 /* AlicloudHttpDNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlicloudHttpDNS.framework; path = httpdns/AlicloudHttpDNS.framework; sourceTree = "<group>"; };
+		457C12546B1BEF0A3C2A765230D0CC8F /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		4D6A195AA45A812E167AF88AF93BBF02 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
+		4F0AE5AE3EE8EDDC3989D3D6A326FE08 /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
+		4F66F01D5E0B7FA5385E0068B3C34F08 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		4F8C3A07DD3050223B7933CDD48389B3 /* Pods-LFJToolManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LFJToolManager-resources.sh"; sourceTree = "<group>"; };
+		5007114E3F0DD6689232821DB512965B /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		5248BA5F9FCE273AD7238E83DAEE4CEF /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		54A63D91B75D8848D1DAFACB064D5B25 /* AlicloudHTTPDNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudHTTPDNS.release.xcconfig; sourceTree = "<group>"; };
+		5694054832193E7C32690C53596A0F2D /* libPods-LFJToolManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LFJToolManager.a"; path = "libPods-LFJToolManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1D0370DFC46586414433E633C03628 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		7D51A520B393393D1339F6AD2B914D7F /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlicloudUtils.framework; path = utils/AlicloudUtils.framework; sourceTree = "<group>"; };
+		8024B20846C905F7D3FE03B10CC29992 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		81109C46652A488C750330C806C4DDBF /* AlicloudUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUtils.debug.xcconfig; sourceTree = "<group>"; };
+		821E2AF6A979692560B0EE7F5417DD56 /* AlicloudUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUT.debug.xcconfig; sourceTree = "<group>"; };
+		83C0C6F20B8B947D30A113134F1BF711 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		84865EE72D5EDD83DC479769879E2765 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		892B250D5182E31CCD4513063C6D4DCD /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
+		89FBF32111CB34A031FD26A8BCF059A9 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		8FD9746F2F2267877791C34FC60C5705 /* AlicloudHTTPDNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudHTTPDNS.debug.xcconfig; sourceTree = "<group>"; };
+		90BE3F0B3CBF2D68E791E2FBF62A7DA6 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		95E4B728AC8F9C4430143D2D51B180AD /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = utdid/UTDID.framework; sourceTree = "<group>"; };
+		9832F262AE54D76669D7BC57CF506A59 /* AlicloudUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUtils.release.xcconfig; sourceTree = "<group>"; };
+		9860299B6928C00EBDE58381B581961E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		98BD2BA816FE254EBBDDDF393151DFDA /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
+		9A0B85C5A11D59E1DB4BB839CE5C01D0 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A59646D16A25D8A1AC9FA545EA97C357 /* Pods-LFJToolManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFJToolManager.release.xcconfig"; sourceTree = "<group>"; };
+		A89E1822B4B2BC9634F011EBFC8C612C /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		AD751A8865C0E2AE514FDCE6F2FDFB38 /* Pods-LFJToolManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LFJToolManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADADB92083C309166C2847BA2E5E676C /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		B482314CCEF9EF440B53065802C23EA1 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		B827C919D6D05CC066F1B4338937F444 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
+		BA588C063CBDA70E23AA2149D6E275DE /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		BB3E53F884EEA0ADA3604BA571BBD0F2 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		BE3CC30B7F806475938052B003D39EB3 /* MJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.release.xcconfig; sourceTree = "<group>"; };
+		C0056404C2E68127B56381E3457F432C /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
+		C265E72346953F9F838E5811A4226909 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		C668E19914A7D3CD403DFEF204546C2F /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		CE02F56C6373EFC58A06CCBB8EA8D42D /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
+		D75F8C25D05143360C293481C067B2C5 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66E43377E5B3A076CC178FFD32C2BAC /* AlicloudUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUT.release.xcconfig; sourceTree = "<group>"; };
+		E70DAF1B335F6517DCB4496A5B5213C0 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
+		E966BA8790849F7AD9AF16BD838C038F /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		EA878B18484FD39DF2608F180D3B1CB4 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		EB609EBB5942547862AF8C8D7981306B /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
+		F12FB450E953FDB155219114417CC0D7 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		F49376723E59879B941AD8F15440EC07 /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
+		FAEEE8767BA228C42E5D1DE007ED9EA9 /* AlicloudUTDID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlicloudUTDID.debug.xcconfig; sourceTree = "<group>"; };
+		FD0A7F91C0CC575A8F061B38DFF751D6 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C7C90401FE0605D4D0B5309FC7AD075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE375C10508BEEB85D7BC5BEA881AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1525F3D208EB2D0C96B413C908B4635B /* Pods-LFJToolManager */ = {
+			isa = PBXGroup;
+			children = (
+				14C94851B108B18FDFBF40B5D2AB0F0C /* Pods-LFJToolManager-acknowledgements.markdown */,
+				AD751A8865C0E2AE514FDCE6F2FDFB38 /* Pods-LFJToolManager-acknowledgements.plist */,
+				0C5C2D45133F5DE27CFEB949F2424F06 /* Pods-LFJToolManager-dummy.m */,
+				4F8C3A07DD3050223B7933CDD48389B3 /* Pods-LFJToolManager-resources.sh */,
+				3D00997C9DAF1127DEB0E65E8A303050 /* Pods-LFJToolManager.debug.xcconfig */,
+				A59646D16A25D8A1AC9FA545EA97C357 /* Pods-LFJToolManager.release.xcconfig */,
+			);
+			name = "Pods-LFJToolManager";
+			path = "Target Support Files/Pods-LFJToolManager";
+			sourceTree = "<group>";
+		};
+		15F98CE3C458CA29BE97E74D6374CDCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81109C46652A488C750330C806C4DDBF /* AlicloudUtils.debug.xcconfig */,
+				9832F262AE54D76669D7BC57CF506A59 /* AlicloudUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlicloudUtils";
+			sourceTree = "<group>";
+		};
+		22C4A6E70C91A601B22EED837C23AF14 /* AlicloudUTDID */ = {
+			isa = PBXGroup;
+			children = (
+				BF512CD084554D221A776CDAF6D728BA /* Frameworks */,
+				B9D8AC591ED4AA176A98361124E603C8 /* Support Files */,
+			);
+			name = AlicloudUTDID;
+			path = AlicloudUTDID;
+			sourceTree = "<group>";
+		};
+		237338AE83B8BA9D9C695C764896CDAC /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CE02F56C6373EFC58A06CCBB8EA8D42D /* MJRefresh.h */,
+				5248BA5F9FCE273AD7238E83DAEE4CEF /* MJRefreshAutoFooter.h */,
+				C265E72346953F9F838E5811A4226909 /* MJRefreshAutoFooter.m */,
+				18AACA52604DED54B62D1405EEBF81D9 /* MJRefreshAutoGifFooter.h */,
+				5007114E3F0DD6689232821DB512965B /* MJRefreshAutoGifFooter.m */,
+				BA588C063CBDA70E23AA2149D6E275DE /* MJRefreshAutoNormalFooter.h */,
+				F12FB450E953FDB155219114417CC0D7 /* MJRefreshAutoNormalFooter.m */,
+				B482314CCEF9EF440B53065802C23EA1 /* MJRefreshAutoStateFooter.h */,
+				84865EE72D5EDD83DC479769879E2765 /* MJRefreshAutoStateFooter.m */,
+				457C12546B1BEF0A3C2A765230D0CC8F /* MJRefreshBackFooter.h */,
+				90BE3F0B3CBF2D68E791E2FBF62A7DA6 /* MJRefreshBackFooter.m */,
+				BB3E53F884EEA0ADA3604BA571BBD0F2 /* MJRefreshBackGifFooter.h */,
+				0C0B67886918C66E7F615FE7A14FDBFB /* MJRefreshBackGifFooter.m */,
+				E966BA8790849F7AD9AF16BD838C038F /* MJRefreshBackNormalFooter.h */,
+				000E07B31C32F660299D20007F3A163B /* MJRefreshBackNormalFooter.m */,
+				89FBF32111CB34A031FD26A8BCF059A9 /* MJRefreshBackStateFooter.h */,
+				28E0C212FB113082547A2295F38D907B /* MJRefreshBackStateFooter.m */,
+				C0056404C2E68127B56381E3457F432C /* MJRefreshComponent.h */,
+				E70DAF1B335F6517DCB4496A5B5213C0 /* MJRefreshComponent.m */,
+				4F66F01D5E0B7FA5385E0068B3C34F08 /* MJRefreshConst.h */,
+				EB609EBB5942547862AF8C8D7981306B /* MJRefreshConst.m */,
+				4F0AE5AE3EE8EDDC3989D3D6A326FE08 /* MJRefreshFooter.h */,
+				98BD2BA816FE254EBBDDDF393151DFDA /* MJRefreshFooter.m */,
+				1965F7C618EB858581D9E69F3883CB0F /* MJRefreshGifHeader.h */,
+				ADADB92083C309166C2847BA2E5E676C /* MJRefreshGifHeader.m */,
+				4D6A195AA45A812E167AF88AF93BBF02 /* MJRefreshHeader.h */,
+				3C75917AB4637620536C70354BECBD71 /* MJRefreshHeader.m */,
+				EA878B18484FD39DF2608F180D3B1CB4 /* MJRefreshNormalHeader.h */,
+				1549A3FA5F17944516C1E64575473E05 /* MJRefreshNormalHeader.m */,
+				A89E1822B4B2BC9634F011EBFC8C612C /* MJRefreshStateHeader.h */,
+				8024B20846C905F7D3FE03B10CC29992 /* MJRefreshStateHeader.m */,
+				C668E19914A7D3CD403DFEF204546C2F /* NSBundle+MJRefresh.h */,
+				83C0C6F20B8B947D30A113134F1BF711 /* NSBundle+MJRefresh.m */,
+				7B1D0370DFC46586414433E633C03628 /* UIScrollView+MJExtension.h */,
+				FD0A7F91C0CC575A8F061B38DFF751D6 /* UIScrollView+MJExtension.m */,
+				03ED9AB9CEF47A6524DE93BEED1457F3 /* UIScrollView+MJRefresh.h */,
+				9860299B6928C00EBDE58381B581961E /* UIScrollView+MJRefresh.m */,
+				B827C919D6D05CC066F1B4338937F444 /* UIView+MJExtension.h */,
+				166B3D9E3BD614104BE51B0B168AE286 /* UIView+MJExtension.m */,
+				639E3A1AB445BB87703F4B3A2022AB78 /* Resources */,
+				6E3A692A94859C6A11CFD9693AD791F5 /* Support Files */,
+			);
+			name = MJRefresh;
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		639E3A1AB445BB87703F4B3A2022AB78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				892B250D5182E31CCD4513063C6D4DCD /* MJRefresh.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		652A0B070974C76B2BD694DEECFDDADC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				821E2AF6A979692560B0EE7F5417DD56 /* AlicloudUT.debug.xcconfig */,
+				E66E43377E5B3A076CC178FFD32C2BAC /* AlicloudUT.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlicloudUT";
+			sourceTree = "<group>";
+		};
+		669B5835F17501DECE5FBAC6A6DA4D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D51A520B393393D1339F6AD2B914D7F /* AlicloudUtils.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA030EE2A9FCE6582013D667452D2F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F86BDD17B7DA436849517D80FD116E5 /* UTMini.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E3A692A94859C6A11CFD9693AD791F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B85C5A11D59E1DB4BB839CE5C01D0 /* MJRefresh-dummy.m */,
+				D75F8C25D05143360C293481C067B2C5 /* MJRefresh-prefix.pch */,
+				F49376723E59879B941AD8F15440EC07 /* MJRefresh.debug.xcconfig */,
+				BE3CC30B7F806475938052B003D39EB3 /* MJRefresh.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MJRefresh";
+			sourceTree = "<group>";
+		};
+		953A6C5ABCA85F0DE7C5D25C7B7D8F83 /* AlicloudUtils */ = {
+			isa = PBXGroup;
+			children = (
+				669B5835F17501DECE5FBAC6A6DA4D6F /* Frameworks */,
+				15F98CE3C458CA29BE97E74D6374CDCC /* Support Files */,
+			);
+			name = AlicloudUtils;
+			path = AlicloudUtils;
+			sourceTree = "<group>";
+		};
+		989C92196461A31D60C7BD619CF01C15 /* AlicloudUT */ = {
+			isa = PBXGroup;
+			children = (
+				6CA030EE2A9FCE6582013D667452D2F4 /* Frameworks */,
+				652A0B070974C76B2BD694DEECFDDADC /* Support Files */,
+			);
+			name = AlicloudUT;
+			path = AlicloudUT;
+			sourceTree = "<group>";
+		};
+		B6451D4EB1342A0B4295A33B25CFAE4F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1525F3D208EB2D0C96B413C908B4635B /* Pods-LFJToolManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B9D8AC591ED4AA176A98361124E603C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAEEE8767BA228C42E5D1DE007ED9EA9 /* AlicloudUTDID.debug.xcconfig */,
+				07CAF1259A58DE862E3C0D2DA87C67E4 /* AlicloudUTDID.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlicloudUTDID";
+			sourceTree = "<group>";
+		};
+		BF512CD084554D221A776CDAF6D728BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E4B728AC8F9C4430143D2D51B180AD /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C08C6047A490954C5D104BEB506B444F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */,
+				5694054832193E7C32690C53596A0F2D /* libPods-LFJToolManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A5DE91F00407A858E4ECF4ED17BDA9 /* AlicloudHTTPDNS */ = {
+			isa = PBXGroup;
+			children = (
+				C6D54B8A5D037AF189C39C2E552A0E8E /* Frameworks */,
+				EF280CD94AA65E1DF6F9F4297CA0D251 /* Support Files */,
+			);
+			name = AlicloudHTTPDNS;
+			path = AlicloudHTTPDNS;
+			sourceTree = "<group>";
+		};
+		C6D54B8A5D037AF189C39C2E552A0E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4487008B9C22F296043DEDC3B0142AA8 /* AlicloudHttpDNS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				E0E4DF45389CD1137ACBAA30341C0076 /* Pods */,
+				C08C6047A490954C5D104BEB506B444F /* Products */,
+				B6451D4EB1342A0B4295A33B25CFAE4F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E4DF45389CD1137ACBAA30341C0076 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4A5DE91F00407A858E4ECF4ED17BDA9 /* AlicloudHTTPDNS */,
+				989C92196461A31D60C7BD619CF01C15 /* AlicloudUT */,
+				22C4A6E70C91A601B22EED837C23AF14 /* AlicloudUTDID */,
+				953A6C5ABCA85F0DE7C5D25C7B7D8F83 /* AlicloudUtils */,
+				237338AE83B8BA9D9C695C764896CDAC /* MJRefresh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF280CD94AA65E1DF6F9F4297CA0D251 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FD9746F2F2267877791C34FC60C5705 /* AlicloudHTTPDNS.debug.xcconfig */,
+				54A63D91B75D8848D1DAFACB064D5B25 /* AlicloudHTTPDNS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlicloudHTTPDNS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		155DCE49615885B57A5111DEFF853C7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED71760D75BF9B6C8BC98062BDFD07D1 /* MJRefresh.h in Headers */,
+				FED5770569AAA0E45EF74522CB617B64 /* MJRefreshAutoFooter.h in Headers */,
+				F4C593492844D37C58705DACB3409C28 /* MJRefreshAutoGifFooter.h in Headers */,
+				10B320645982B481D026D252158928E1 /* MJRefreshAutoNormalFooter.h in Headers */,
+				8540D7C92A51F917D80AABEDDDE44417 /* MJRefreshAutoStateFooter.h in Headers */,
+				30A6398F5A3F95D43BEEBF5BE25AA7F9 /* MJRefreshBackFooter.h in Headers */,
+				EF0408C522F5F9F4383EA45FF59A89FA /* MJRefreshBackGifFooter.h in Headers */,
+				2D79705C9E9111F3795C662FCBA866CC /* MJRefreshBackNormalFooter.h in Headers */,
+				F684BDC9EB74BD5FD12E3ABFDE779E12 /* MJRefreshBackStateFooter.h in Headers */,
+				7497DFD7BD1BD80E3854691DAED632DD /* MJRefreshComponent.h in Headers */,
+				81480792CD6ED7819683C63B2ECC81BA /* MJRefreshConst.h in Headers */,
+				778EDA88AD8089DDDCB9BAD14FC61504 /* MJRefreshFooter.h in Headers */,
+				BB86867A8B715C629357735FCFC81814 /* MJRefreshGifHeader.h in Headers */,
+				725CC8DF14A3844A66DCE932B1BFF0FA /* MJRefreshHeader.h in Headers */,
+				2A9B91A3F37582467ECF54A3A626053B /* MJRefreshNormalHeader.h in Headers */,
+				1D5E6EFF91D9CE761E34FE23B10AB6C4 /* MJRefreshStateHeader.h in Headers */,
+				AE27FE8438D28A27E822EF13B8062F02 /* NSBundle+MJRefresh.h in Headers */,
+				FEEAFBEC41C329F18AEDA18220883FF5 /* UIScrollView+MJExtension.h in Headers */,
+				8496977A6639BB029807D4AEB634C419 /* UIScrollView+MJRefresh.h in Headers */,
+				2F10992ACA27F357F768E796B512720F /* UIView+MJExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B76155DE4158E0D8BCA5501625B8E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B92CAB768E6E8058714483F0A8D7A9 /* Build configuration list for PBXNativeTarget "MJRefresh" */;
+			buildPhases = (
+				155DCE49615885B57A5111DEFF853C7D /* Headers */,
+				A40CC699A205464AF8BB3CD95A5D3B09 /* Sources */,
+				3C7C90401FE0605D4D0B5309FC7AD075 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJRefresh;
+			productName = MJRefresh;
+			productReference = E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6BEF992112BD525978634AACD503EB5C /* Pods-LFJToolManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E36F36531AF73D828D918785B90109BE /* Build configuration list for PBXNativeTarget "Pods-LFJToolManager" */;
+			buildPhases = (
+				D9B76155DE4158E0D8BCA5501625B8E8 /* Headers */,
+				B77188E94BACCE64F5A3BB18FB176AFB /* Sources */,
+				CDE375C10508BEEB85D7BC5BEA881AA7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51C7BF82D2B1CA7C5423FA2BEBD0645C /* PBXTargetDependency */,
+				A2B811D3F37F45B8317709381761365C /* PBXTargetDependency */,
+				7B2371A5E5FC57B30DC3F6D0144DACE7 /* PBXTargetDependency */,
+				3C52B8DCA8DC23E7DB740E973C85773D /* PBXTargetDependency */,
+				76315B6033381779574F13BEAE64852D /* PBXTargetDependency */,
+			);
+			name = "Pods-LFJToolManager";
+			productName = "Pods-LFJToolManager";
+			productReference = 5694054832193E7C32690C53596A0F2D /* libPods-LFJToolManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C08C6047A490954C5D104BEB506B444F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD5390F049BB695CC615E07AF49B04C /* AlicloudHTTPDNS */,
+				E9E6A901E448660EFF3445A118182C28 /* AlicloudUT */,
+				0883074DEB508458C174DE306B480284 /* AlicloudUTDID */,
+				DD99D8E362F7950F06AD0A963460E834 /* AlicloudUtils */,
+				6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */,
+				6BEF992112BD525978634AACD503EB5C /* Pods-LFJToolManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40CC699A205464AF8BB3CD95A5D3B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5FD28C1193583E77E3D5AB31231EEE /* MJRefresh-dummy.m in Sources */,
+				DF1E5C5712871055949A66ABEE52B5BE /* MJRefreshAutoFooter.m in Sources */,
+				E4BA1E30409473575812484CEC66C7D8 /* MJRefreshAutoGifFooter.m in Sources */,
+				477E7FD45E71B3DC68C7BE15A3354EFA /* MJRefreshAutoNormalFooter.m in Sources */,
+				7E92196E1F5F3DFB3AEC643C23E674C8 /* MJRefreshAutoStateFooter.m in Sources */,
+				139697D9E4AC066C9F1F60627027D6C5 /* MJRefreshBackFooter.m in Sources */,
+				FE58C05D0A4BA35CFD780D486397AFCF /* MJRefreshBackGifFooter.m in Sources */,
+				E14F3EC4E687268A35CCE55D337B7BA2 /* MJRefreshBackNormalFooter.m in Sources */,
+				7E8CE4189B86E32C6F2C994871C65531 /* MJRefreshBackStateFooter.m in Sources */,
+				1B46580F8553F6287C9A7F1F4388934A /* MJRefreshComponent.m in Sources */,
+				E7D27A72714C1736CBCC5506AD4955F3 /* MJRefreshConst.m in Sources */,
+				8A18B5C1BDE43ECDD7853255208EE5B3 /* MJRefreshFooter.m in Sources */,
+				491C3309A94031C2F125BF35ABAF39E6 /* MJRefreshGifHeader.m in Sources */,
+				AEBFCD60D316911D54797AA8CD5E7804 /* MJRefreshHeader.m in Sources */,
+				D2FD8E9409D56558CA21BC7C143CBB7A /* MJRefreshNormalHeader.m in Sources */,
+				03110534BE651EBAF2313563CD8200F2 /* MJRefreshStateHeader.m in Sources */,
+				82935DB0B0EA3295EE2B1E38D1C0EAE4 /* NSBundle+MJRefresh.m in Sources */,
+				B901695204B1B2E59072DB6F243001EC /* UIScrollView+MJExtension.m in Sources */,
+				B0E053196779C295CAD5B467489A21D2 /* UIScrollView+MJRefresh.m in Sources */,
+				1AD158C0433B4552126BCB09F03623ED /* UIView+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77188E94BACCE64F5A3BB18FB176AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E5C491196829E6B6A67BEC03557678 /* Pods-LFJToolManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C52B8DCA8DC23E7DB740E973C85773D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUtils;
+			target = DD99D8E362F7950F06AD0A963460E834 /* AlicloudUtils */;
+			targetProxy = 4FB3FAFD5940E5A9B9FF135978FCF930 /* PBXContainerItemProxy */;
+		};
+		51C7BF82D2B1CA7C5423FA2BEBD0645C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudHTTPDNS;
+			target = 3DD5390F049BB695CC615E07AF49B04C /* AlicloudHTTPDNS */;
+			targetProxy = 97C3C1756888BE0D74553D7320E0A273 /* PBXContainerItemProxy */;
+		};
+		76315B6033381779574F13BEAE64852D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			targetProxy = 75A925E9C6935AF1F7FC9D3A7AA4F0EA /* PBXContainerItemProxy */;
+		};
+		7B2371A5E5FC57B30DC3F6D0144DACE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUTDID;
+			target = 0883074DEB508458C174DE306B480284 /* AlicloudUTDID */;
+			targetProxy = 30439A0BA4F9E8B6239CFA990D674F9B /* PBXContainerItemProxy */;
+		};
+		84FA776906D43DDC9F08C15590661D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUTDID;
+			target = 0883074DEB508458C174DE306B480284 /* AlicloudUTDID */;
+			targetProxy = 9644D91B1C11E64D560903D149B93F8A /* PBXContainerItemProxy */;
+		};
+		A2B811D3F37F45B8317709381761365C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUT;
+			target = E9E6A901E448660EFF3445A118182C28 /* AlicloudUT */;
+			targetProxy = 4A9FB742980DB53B6630562A7708ECDE /* PBXContainerItemProxy */;
+		};
+		E4EA067826DD5720A48B52E1849FCB59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUT;
+			target = E9E6A901E448660EFF3445A118182C28 /* AlicloudUT */;
+			targetProxy = D5EC64A6DB0CF4EC5E7B2C9A213F50F4 /* PBXContainerItemProxy */;
+		};
+		EB8AB07961AB46C34504C411BB47D595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUTDID;
+			target = 0883074DEB508458C174DE306B480284 /* AlicloudUTDID */;
+			targetProxy = 964BCA112AE3E0D9488D4E8D737935F6 /* PBXContainerItemProxy */;
+		};
+		F3781B02CC0182B8A629477DEC772B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlicloudUtils;
+			target = DD99D8E362F7950F06AD0A963460E834 /* AlicloudUtils */;
+			targetProxy = F3F58413728825000213CC02B96AFDDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F2F65DB3955D0151A3471CECF0178C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59646D16A25D8A1AC9FA545EA97C357 /* Pods-LFJToolManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456A74631A7E4A1551077AA6EB0BA32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEEE8767BA228C42E5D1DE007ED9EA9 /* AlicloudUTDID.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4582C8E6DE5768B3FFEA829038CF05A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9832F262AE54D76669D7BC57CF506A59 /* AlicloudUtils.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6337CB57D885E287640E90925280B78B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3CC30B7F806475938052B003D39EB3 /* MJRefresh.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A01F6D5655A678DCAFE1D4BA1BA0989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821E2AF6A979692560B0EE7F5417DD56 /* AlicloudUT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D405726B92B7CC3D9F8D49108D1AB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD9746F2F2267877791C34FC60C5705 /* AlicloudHTTPDNS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72B52E5331723CEB7B7D7DF76BBD7D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D00997C9DAF1127DEB0E65E8A303050 /* Pods-LFJToolManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8644CE44A4124A1BEBE6BA1A64FE001E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49376723E59879B941AD8F15440EC07 /* MJRefresh.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B272C703983FC3A7D63D35FEF4C08EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A63D91B75D8848D1DAFACB064D5B25 /* AlicloudHTTPDNS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE499B0BFE525F9449B182AE4C99AF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81109C46652A488C750330C806C4DDBF /* AlicloudUtils.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1F4F5EE27CE16046097FE28E38A75F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66E43377E5B3A076CC178FFD32C2BAC /* AlicloudUT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7475230C4872AAC9821B06AA958CEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07CAF1259A58DE862E3C0D2DA87C67E4 /* AlicloudUTDID.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34825F93B5E7E65C101EAAB59048BF55 /* Build configuration list for PBXAggregateTarget "AlicloudHTTPDNS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D405726B92B7CC3D9F8D49108D1AB8A /* Debug */,
+				8B272C703983FC3A7D63D35FEF4C08EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E18F0A85C0144C1F7FF2D61AFE0F3D7 /* Build configuration list for PBXAggregateTarget "AlicloudUTDID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456A74631A7E4A1551077AA6EB0BA32E /* Debug */,
+				D7475230C4872AAC9821B06AA958CEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63663D6BE8BC104C57932A7F1C1C0E87 /* Build configuration list for PBXAggregateTarget "AlicloudUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A01F6D5655A678DCAFE1D4BA1BA0989 /* Debug */,
+				D1F4F5EE27CE16046097FE28E38A75F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		860B9C45A6E26169BB388BBF2884ACB5 /* Build configuration list for PBXAggregateTarget "AlicloudUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE499B0BFE525F9449B182AE4C99AF7F /* Debug */,
+				4582C8E6DE5768B3FFEA829038CF05A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B92CAB768E6E8058714483F0A8D7A9 /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8644CE44A4124A1BEBE6BA1A64FE001E /* Debug */,
+				6337CB57D885E287640E90925280B78B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E36F36531AF73D828D918785B90109BE /* Build configuration list for PBXNativeTarget "Pods-LFJToolManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B52E5331723CEB7B7D7DF76BBD7D9D /* Debug */,
+				1F2F65DB3955D0151A3471CECF0178C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
